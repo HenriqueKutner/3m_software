@@ -1,0 +1,85 @@
+@media only screen and (max-width: 600px) {
+  /* Aqui começa note-guy */
+
+  .section-note-guy {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .note-guy {
+    width: 275px;
+    height: 100vh;
+    padding: 10px;
+    padding-top: 70px;
+  }
+
+  .note-guy img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .note-guy h1 {
+    color: white;
+  }
+
+  .note-guy p {
+    color: white;
+    padding-top: 10px;
+  }
+
+  .note-guy button {
+    width: 180px;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #1bd9b7;
+    border-radius: 3px;
+    color: white;
+    font-weight: 900;
+    outline: none;
+  }
+
+  /* Aqui começa projects */
+
+  .projects-section {
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects-container {
+    width: 270px;
+    padding-top: 40px;
+  }
+
+  .projects-container h1 {
+    color: white;
+  }
+
+  .projects-cards {
+    width: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .box-cards {
+    width: 250px;
+    height: 200px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border: 5px solid #1bd9b7;
+  }
+
+  .box-cards img {
+    width: 100%;
+    height: 100%;
+  }
+}
