@@ -6,6 +6,7 @@ import logoCurta from '../../assets/img/logocurtateste.svg';
 import stickUm from '../../assets/img/stick-one.svg';
 import stickDois from '../../assets/img/stick-two.svg';
 import fundoCodigo from '../../assets/img/fundo-code.jpg';
+import Footer from '../../components/footer/Footer';
 
 
 const Main = () => {
@@ -65,6 +66,7 @@ const Main = () => {
           <img className="te" alt="text" src={stickDois} />
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
