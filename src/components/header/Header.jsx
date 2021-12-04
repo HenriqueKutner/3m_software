@@ -1,11 +1,13 @@
 import "./Header.css";
-import LogoPrincipal from "../../assets/img/LOGO 1.svg";
+import LogoPrincipal from "../../assets/img/logo_principal.svg";
 
 const Header = () => {
   return (
     <div className="header-container">
       <div className="header-box">
-        <img src={LogoPrincipal} />
+        <div className="box-img">
+          <img alt="#" src={LogoPrincipal} />
+        </div>
         <p>About</p>
         <p>Works</p>
       </div>
