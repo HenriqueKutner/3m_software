@@ -1,5 +1,6 @@
 import "./Header.css";
 import LogoPrincipal from "../../assets/img/logo_principal.svg";
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -9,8 +10,8 @@ const Header = () => {
           <img alt="#" src={LogoPrincipal} />
         </div>
         <div className="about-works">
-          <p>About</p>
-          <p>Works</p>
+          <Link to="about-scroll" smooth={true} duration={1000}><p>About</p></Link>
+          <Link to="projects-scroll" smooth={true} duration={1000}><p>Works</p></Link>
         </div>
       </div>
     </div>

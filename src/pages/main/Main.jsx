@@ -8,9 +8,15 @@ import stickDois from '../../assets/img/stick-two.svg';
 import stickTres from '../../assets/img/stick-three.svg';
 import fundoCodigo from '../../assets/img/fundo-code.jpg';
 import Footer from '../../components/footer/Footer';
+import { Link } from 'react-scroll';
 
 
 const Main = () => {
+
+  const submitForm = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="main-all">
       <Header />
@@ -19,13 +25,13 @@ const Main = () => {
           <div>
             <h1>Frase Frase Frase</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae animi suscipit blanditiis nemo nobis atque unde voluptate, fuga natus reprehenderit fugiat aperiam voluptates, minima dignissimos. Labore in dolorem voluptates dicta.</p>
-            <button>Start a Project</button>
+            <Link to="form-scroll" smooth={true} duration={1000}><button>Start a Project</button></Link>
           </div>
           <img alt="text" src={guyPhoto} />
         </div>
       </section>
       <section className="projects-section">
-        <div className="projects-container">
+        <div className="projects-container" id="projects-scroll">
           <h1>Our Projects</h1>
           <div className="projects-cards">
             <div className="box-cards"><img src={photoOne} /></div>
@@ -37,9 +43,9 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section className="projects-about" style={{backgroundImage: `url(${fundoCodigo})`, backgroundRepeat:"no-repeat", backgroundSize:"cover" }}>
-        <div className="about-container">
-          <div className="about-title">
+      <section className="projects-about"  id="about-scroll" style={{backgroundImage: `url(${fundoCodigo})`, backgroundRepeat:"no-repeat", backgroundSize:"cover" }}>
+        <div className="about-container" >
+          <div className="about-title" >
             <span>About</span>
             <img alt="text" src={logoCurta}/>
           </div>
@@ -55,14 +61,14 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section className="form-section">
+      <section className="form-section" id="form-scroll">
         <div className="form-container">
           <h1>Let's work together</h1>
           <form>
             <input placeholder="Your name" type="text" />
             <input placeholder="Your best e-mail" type="text" />
             <textarea placeholder="Project description"></textarea>
-            <button>Submit</button>
+            <button onClick={submitForm}>Submit</button>
           </form>
           <img className="stick-dois-class" alt="text" src={stickDois} />
           <img className="stick-tres-class" alt="text" src={stickTres} />

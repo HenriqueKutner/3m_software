@@ -31,17 +31,17 @@
   .header-box p {
     color: white;
     font-size: 15px;
+    cursor: pointer;
   }
 
   .about-works {
-    display:flex;
+    display: flex;
   }
 
   .about-works p {
-    padding-left:20px;
+    padding-left: 20px;
   }
 }
-
 
 @media only screen and (min-width: 375px) {
   .header-container {
@@ -58,7 +58,7 @@
 
   .box-img {
     width: 180px;
-    height:40px;
+    height: 40px;
   }
 
   .box-img img {
@@ -66,11 +66,10 @@
   }
 
   .header-box p {
-    padding-top:3px;
+    padding-top: 3px;
     font-size: 20px;
   }
 }
-
 
 @media only screen and (min-width: 768px) {
   .header-container {
@@ -81,7 +80,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    padding-bottom:10px;
+    padding-bottom: 10px;
   }
 
   .header-box {
@@ -93,7 +92,7 @@
 
   .box-img {
     width: 300px;
-    padding-top:-5px;
+    padding-top: -5px;
   }
 
   .box-img img {
@@ -129,11 +128,10 @@
   }
 
   .about-works {
-    margin-top:15px;
+    margin-top: 15px;
   }
 
   .about-works p {
     padding-left: 20px;
   }
 }
-
