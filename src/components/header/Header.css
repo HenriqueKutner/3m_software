@@ -22,6 +22,7 @@
 
   .box-img {
     width: 120px;
+    cursor: pointer;
   }
 
   .box-img img {

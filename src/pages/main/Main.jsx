@@ -30,8 +30,8 @@ const Main = () => {
           <img alt="text" src={guyPhoto} />
         </div>
       </section>
-      <section className="projects-section">
-        <div className="projects-container" id="projects-scroll">
+      <section className="projects-section" id="projects-scroll">
+        <div className="projects-container" >
           <h1>Our Projects</h1>
           <div className="projects-cards">
             <div className="box-cards"><img src={photoOne} /></div>

@@ -4,9 +4,9 @@ import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
-    <div className="header-container">
-      <div className="header-box">
-        <div className="box-img">
+    <div className="header-container" >
+      <div className="header-box" id="header-scroll">
+        <div className="box-img" onClick={() => window.scroll(0, 0)}>
           <img alt="#" src={LogoPrincipal} />
         </div>
         <div className="about-works">
