@@ -3,7 +3,7 @@
 
   .section-note-guy {
     width: 100%;
-    height: 100vh;
+    height: 800px;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -12,7 +12,6 @@
 
   .note-guy {
     width: 275px;
-    height: 100vh;
     padding: 10px;
     padding-top: 70px;
   }
@@ -56,6 +55,7 @@
   .projects-container {
     width: 270px;
     padding-top: 40px;
+    text-align: center;
   }
 
   .projects-container h1 {
@@ -171,6 +171,8 @@
     height: 400px;
     background-color: #121212;
     padding-top: 50px;
+    display: flex;
+    justify-content: center;
   }
 
   .form-container {
@@ -195,16 +197,25 @@
     width: 220px;
     height: 35px;
     border-radius: 2px;
+    padding: 10px;
     margin-top: 20px;
     background-color: #1bd9b7;
     border: 2px solid #026956;
+    color: white;
+  }
+
+  ::placeholder {
+    color: black;
+    opacity: 1;
   }
 
   .form-container form textarea {
     width: 220px;
     margin-top: 20px;
+    padding: 10px;
     background-color: #1bd9b7;
     border: 2px solid #026956;
+    color: white;
   }
 
   .form-container form button {
@@ -221,10 +232,191 @@
     outline: none;
   }
 
-  .form-container .te {
-    width: 100px;
+  .form-container .stick-dois-class {
+    width: 80px;
     position: absolute;
     right: 0px;
+    bottom: 17px;
+  }
+
+  .form-container .stick-tres-class {
+    width: 30px;
+    position: absolute;
+    left: 4px;
+    top: 50px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  /* Aqui começa note-guy */
+
+  .note-guy {
+    width: 340px;
+    height: 100vh;
+    padding: 10px;
+    padding-top: 80px;
+  }
+
+  .note-guy h1 {
+    font-size: 40px;
+  }
+
+  .note-guy p {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .note-guy button {
+    width: 230px;
+    height: 60px;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  /* Aqui começa projects */
+
+  .projects-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects-container {
+    width: 370px;
+    padding-top: 40px;
+  }
+
+  .projects-container h1 {
+    padding-left: 10px;
+  }
+
+  .projects-cards {
+    width: 365px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 0px;
+  }
+
+  .box-cards {
+    width: 350px;
+    height: 300px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border: 5px solid #1bd9b7;
+  }
+
+  /* Aqui começa About */
+
+  .projects-about {
+    height: 800px;
+  }
+
+  .about-container {
+    height: 50px;
+  }
+
+  .about-title {
+    width: 300px;
+  }
+
+  .about-title span {
+    font-size: 30px;
+  }
+
+  .about-title img {
+    width: 100px;
+    height: 70px;
+  }
+
+  .about-text-one {
+    width: 330px;
+  }
+
+  .about-text-one p {
+    font-size: 25px;
+  }
+
+  .about-text-one img {
+    width: 55px;
+    top: 10px;
+    left: -28px;
+  }
+
+  .about-text-two {
+    width: 330px;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+
+  .about-text-two p {
+    font-size: 25px;
+  }
+
+  .about-text-two img {
+    width: 130px;
+    position: absolute;
+    bottom: -40px;
+    right: -20px;
+  }
+
+  /* Aqui começa o Form */
+
+  .form-section {
+    width: 100%;
+    height: 700px;
+    background-color: #121212;
+    padding-top: 50px;
+  }
+
+  .form-container {
+    width: 375px;
+  }
+
+  .form-container h1 {
+    font-size: 35px;
+  }
+
+  .form-container form input {
+    width: 300px;
+    height: 45px;
+    border-radius: 2px;
+    margin-top: 20px;
+    background-color: #1bd9b7;
+    border: 2px solid #026956;
+    font-size: 20px;
+  }
+
+  .form-container form textarea {
+    width: 300px;
+    height: 150px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #1bd9b7;
+    border: 2px solid #026956;
+  }
+
+  .form-container form button {
+    width: 250px;
+    height: 50px;
+    margin-top: 25px;
+    font-size: 25px;
+  }
+
+  .form-container .stick-dois-class {
+    width: 120px;
+    position: absolute;
+    right: 0px;
+    top: 280px;
+  }
+
+  .form-container .stick-tres-class {
+    width: 40px;
+    position: absolute;
+    left: -px;
+    top: 50px;
   }
 }
 
@@ -291,7 +483,7 @@
   .projects-container {
     width: 768px;
     padding-top: 40px;
-    padding: 30px;
+    padding: 18px;
   }
 
   .projects-container h1 {
@@ -315,8 +507,549 @@
     border: 5px solid #1bd9b7;
   }
 
-  .box-cards img {
+  /* Aqui começa About */
+
+  .projects-about {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-color: #121212;
+    padding-top: 50px;
+  }
+
+  .about-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-title {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-title span {
+    color: white;
+    padding-bottom: 5px;
+    font-size: 35px;
+    padding-right: 15px;
+  }
+
+  .about-title img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .about-text-one {
+    width: 700px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-text-one p {
+    width: 450px;
+    font-size: 35px;
+  }
+
+  .about-text-one img {
+    width: 80px;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+  }
+
+  .about-text-two {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-text-two p {
+    width: 450px;
+    font-size: 35px;
+  }
+
+  .about-text-two img {
+    width: 180px;
+    position: absolute;
+    bottom: -100px;
+    right: 70px;
+  }
+
+  /* Aqui começa o Form */
+
+  .form-section {
+    width: 100%;
+    height: 700px;
+    background-color: #121212;
+    padding-top: 50px;
+  }
+
+  .form-container {
+    width: 700px;
+  }
+
+  .form-container h1 {
+    font-size: 50px;
+  }
+
+  .form-container form input {
+    width: 500px;
+    height: 65px;
+    border-radius: 2px;
+    margin-top: 20px;
+    background-color: #1bd9b7;
+    border: 2px solid #026956;
+    font-size: 30px;
+  }
+
+  .form-container form textarea {
+    width: 500px;
+    height: 200px;
+    margin-top: 20px;
+    font-size: 30px;
+    background-color: #1bd9b7;
+    border: 2px solid #026956;
+  }
+
+  .form-container form button {
+    width: 300px;
+    height: 80px;
+    margin-top: 25px;
+    font-size: 25px;
+  }
+
+  .form-container .stick-dois-class {
+    width: 150px;
+    position: absolute;
+    right: 48px;
+    top: 280px;
+  }
+
+  .form-container .stick-tres-class {
+    width: 60px;
+    position: absolute;
+    left: 50px;
+    top: 65px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Aqui começa note-guy */
+
+  .section-note-guy {
+    width: 100%;
+    height: 1800px;
+  }
+
+  .note-guy {
+    width: 760px;
+    height: 100vh;
+  }
+
+  .note-guy img {
+    width: 100%;
+    height: 60%;
+    margin-top: 30px;
+  }
+
+  .note-guy h1 {
+    color: white;
+    font-size: 80px;
+  }
+
+  .note-guy p {
+    color: white;
+    padding-top: 10px;
+    font-size: 45px;
+    line-height: 42px;
+  }
+
+  .note-guy button {
+    width: 350px;
+    height: 110px;
+    font-size: 35px;
+  }
+
+  /* Aqui começa projects */
+
+  .projects-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    padding-top: 120px;
+  }
+
+  .projects-container {
+    width: 1000px;
+    padding-top: 40px;
+  }
+
+  .projects-container h1 {
+    color: white;
+    padding-left: 8px;
+    font-size: 45px;
+  }
+
+  .projects-cards {
+    width: 980px;
+  }
+
+  .box-cards {
+    width: 420px;
+    height: 350px;
+  }
+
+  /* Aqui começa About */
+
+  .projects-about {
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+  }
+
+  .about-container {
+    width: 100%;
+    height: 50px;
+  }
+
+  .about-title {
+    width: 400px;
+  }
+
+  .about-title span {
+    color: white;
+    padding-bottom: 5px;
+    font-size: 50px;
+    padding-right: 15px;
+  }
+
+  .about-title img {
+    width: 140px;
+    height: 130px;
+  }
+
+  .about-text-wrapper {
+    width: 100%;
+  }
+
+  .about-text-one {
+    width: 800px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-text-one p {
+    width: 600px;
+    font-size: 45px;
+    line-height: 48px;
+  }
+
+  .about-text-one img {
+    width: 110px;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+  }
+
+  .about-text-two {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-text-two p {
+    width: 600px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .about-text-two img {
+    width: 250px;
+    position: absolute;
+    bottom: -120px;
+    right: 30px;
+  }
+
+  /* Aqui começa o Form */
+
+  .form-section {
+    width: 100%;
+    height: 700px;
+    background-color: #121212;
+    padding-top: 50px;
+  }
+
+  .form-container {
+    width: 700px;
+  }
+
+  .form-container h1 {
+    font-size: 50px;
+  }
+
+  .form-container form input {
+    width: 500px;
+    height: 65px;
+    border-radius: 2px;
+    margin-top: 20px;
+    background-color: #1bd9b7;
+    border: 2px solid #026956;
+    font-size: 30px;
+  }
+
+  .form-container form textarea {
+    width: 500px;
+    height: 200px;
+    margin-top: 20px;
+    font-size: 30px;
+    background-color: #1bd9b7;
+    border: 2px solid #026956;
+  }
+
+  .form-container form button {
+    width: 300px;
+    height: 80px;
+    margin-top: 25px;
+    font-size: 25px;
+  }
+
+  .form-container .stick-dois-class {
+    width: 150px;
+    position: absolute;
+    right: 48px;
+    top: 280px;
+  }
+
+  .form-container .stick-tres-class {
+    width: 60px;
+    position: absolute;
+    left: 50px;
+    top: 65px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Aqui começa note-guy */
+
+  .section-note-guy {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .note-guy {
+    width: 1400px;
+    height: 100vh;
+    z-index: 10;
+  }
+
+  .note-guy div {
+    position: absolute;
+  }
+
+  .note-guy img {
+    width: 100%;
+    height: 75%;
+    margin-top: 30px;
+  }
+
+  .note-guy h1 {
+    color: white;
+    font-size: 50px;
+  }
+
+  .note-guy p {
+    width: 600px;
+    color: white;
+    padding-top: 10px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .note-guy button {
+    width: 350px;
+    height: 90px;
+    font-size: 35px;
+  }
+
+  /* Aqui começa projects */
+
+  .projects-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    padding-top: 30px;
+  }
+
+  .projects-container {
+    width: 1400px;
+    padding-top: 40px;
+  }
+
+  .projects-container h1 {
+    padding-left: 8px;
+    font-size: 45px;
+  }
+
+  .projects-cards {
+    width: 1400px;
+  }
+
+  .box-cards {
+    width: 420px;
+    height: 300px;
+    margin-left: 20px;
+  }
+
+  /* Aqui começa About */
+
+  .projects-about {
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+  }
+
+  .about-container {
+    width: 100%;
+    height: 50px;
+  }
+
+  .about-title {
+    width: 400px;
+  }
+
+  .about-title span {
+    color: white;
+    padding-bottom: 5px;
+    font-size: 50px;
+    padding-right: 15px;
+  }
+
+  .about-title img {
+    width: 140px;
+    height: 130px;
+  }
+
+  .about-text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-text-one {
+    width: 800px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .about-text-one p {
+    width: 600px;
+    font-size: 45px;
+    line-height: 48px;
+  }
+
+  .about-text-one img {
+    width: 110px;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+  }
+
+  .about-text-two {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-text-two p {
+    width: 600px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .about-text-two img {
+    width: 250px;
+    position: absolute;
+    bottom: -120px;
+    right: 30px;
+  }
+
+  /* Aqui começa o Form */
+
+  .form-section {
+    width: 100%;
+    height: 700px;
+    background-color: #121212;
+    padding-top: 50px;
+  }
+
+  .form-container {
+    width: 700px;
+  }
+
+  .form-container h1 {
+    font-size: 50px;
+  }
+
+  .form-container form input {
+    width: 500px;
+    height: 65px;
+    border-radius: 2px;
+    margin-top: 20px;
+    background-color: #1bd9b7;
+    border: 2px solid #026956;
+    font-size: 30px;
+  }
+
+  .form-container form textarea {
+    width: 500px;
+    height: 200px;
+    margin-top: 20px;
+    font-size: 30px;
+    background-color: #1bd9b7;
+    border: 2px solid #026956;
+  }
+
+  .form-container form button {
+    width: 300px;
+    height: 80px;
+    margin-top: 25px;
+    font-size: 25px;
+  }
+
+  .form-container .stick-dois-class {
+    width: 150px;
+    position: absolute;
+    right: 48px;
+    top: 280px;
+  }
+
+  .form-container .stick-tres-class {
+    width: 60px;
+    position: absolute;
+    left: 50px;
+    top: 65px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .about-text-wrapper {
+    padding-left: 500px;
   }
 }

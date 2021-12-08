@@ -5,6 +5,7 @@ import photoOne from '../../assets/img/photo_one.jpeg';
 import logoCurta from '../../assets/img/logocurtateste.svg';
 import stickUm from '../../assets/img/stick-one.svg';
 import stickDois from '../../assets/img/stick-two.svg';
+import stickTres from '../../assets/img/stick-three.svg';
 import fundoCodigo from '../../assets/img/fundo-code.jpg';
 import Footer from '../../components/footer/Footer';
 
@@ -63,7 +64,8 @@ const Main = () => {
             <textarea placeholder="Project description"></textarea>
             <button>Submit</button>
           </form>
-          <img className="te" alt="text" src={stickDois} />
+          <img className="stick-dois-class" alt="text" src={stickDois} />
+          <img className="stick-tres-class" alt="text" src={stickTres} />
         </div>
       </section>
       <Footer />
