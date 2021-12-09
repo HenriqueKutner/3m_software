@@ -43,6 +43,12 @@
     outline: none;
   }
 
+  .note-guy button:hover {
+    background-color: #1bd9b7;
+    color: #121212;
+    transition: 0.3s;
+  }
+
   /* Aqui começa projects */
 
   .projects-section {
@@ -464,7 +470,6 @@
     background-color: transparent;
     border: 5px solid #1bd9b7;
     border-radius: 3px;
-    color: white;
     font-weight: 900;
     font-size: 25px;
     outline: none;

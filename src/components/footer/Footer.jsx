@@ -1,7 +1,6 @@
 import "./Footer.css";
 import Linked from '../../assets/img/LINKEDIN.svg';
-import Insta from '../../assets/img/INSTAGRAM.svg';
-import Face from '../../assets/img/FACEBOOK.svg';
+import GitLogo from '../../assets/img/github-logo.svg';
 
 
 const Footer = () => {
@@ -9,8 +8,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-socials">
         <a href="https://www.google.com/"><img src={Linked} /></a>
-        <img src={Insta} />
-        <img src={Face} />
+        <img src={GitLogo} />
       </div>
     </div>
   );

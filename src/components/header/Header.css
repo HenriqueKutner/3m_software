@@ -35,6 +35,11 @@
     cursor: pointer;
   }
 
+  .header-box p:hover {
+    color: #1bd9b7;
+    transition: 0.3s;
+  }
+
   .about-works {
     display: flex;
   }
