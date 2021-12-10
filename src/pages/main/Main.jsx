@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import Header from '../../components/header/Header';
 import './Main.css';
 import guyPhoto from '../../assets/img/guynote.jpeg';
@@ -9,12 +10,22 @@ import stickTres from '../../assets/img/stick-three.svg';
 import fundoCodigo from '../../assets/img/fundo-code.jpg';
 import Footer from '../../components/footer/Footer';
 import { Link } from 'react-scroll';
+import emailjs from "emailjs-com";
 
 
 const Main = () => {
 
+  const form = useRef();
+
   const submitForm = (e) => {
     e.preventDefault();
+    emailjs.sendForm('service_i8vnp18', 'template_e51xhpr', form.current, 'user_ey1b7NfGr7LCzQN4UerCX')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
   };
 
   return (
@@ -64,11 +75,11 @@ const Main = () => {
       <section className="form-section" id="form-scroll">
         <div className="form-container">
           <h1>Let's work together</h1>
-          <form>
-            <input placeholder="Your name" type="text" />
-            <input placeholder="Your best e-mail" type="text" />
-            <textarea placeholder="Project description"></textarea>
-            <button onClick={submitForm}>Submit</button>
+          <form ref={form}  onSubmit={submitForm}>
+            <input placeholder="Your name" type="text" name="from_name"/>
+            <input placeholder="Your best e-mail" type="text" name="email"/>
+            <textarea placeholder="Project description" name="description"></textarea>
+            <button type="submit">Submit</button>
           </form>
           <img className="stick-dois-class" alt="text" src={stickDois} />
           <img className="stick-tres-class" alt="text" src={stickTres} />
