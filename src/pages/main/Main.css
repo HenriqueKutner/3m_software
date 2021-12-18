@@ -973,7 +973,7 @@
     width: 110px;
     position: absolute;
     top: 10px;
-    left: 8px;
+    left: -10px;
   }
 
   .about-text-two {
@@ -992,7 +992,7 @@
     width: 250px;
     position: absolute;
     bottom: -120px;
-    right: 30px;
+    right: 0px;
   }
 
   /* Aqui começa o Form */
