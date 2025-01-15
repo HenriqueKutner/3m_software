@@ -1,0 +1,143 @@
+.header-container {
+  z-index: 999;
+}
+
+@media only screen and (min-width: 280px) {
+  .header-container {
+    width: 100%;
+    height: 80px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+
+  .header-box {
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .box-img {
+    width: 120px;
+    cursor: pointer;
+  }
+
+  .box-img img {
+    width: 100%;
+  }
+
+  .header-box p {
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .header-box p:hover {
+    color: #1bd9b7;
+    transition: 0.3s;
+  }
+
+  .about-works {
+    display: flex;
+  }
+
+  .about-works p {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .header-container {
+    width: 100%;
+    height: 80px;
+  }
+
+  .header-box {
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .box-img {
+    width: 180px;
+    height: 40px;
+  }
+
+  .box-img img {
+    width: 100%;
+  }
+
+  .header-box p {
+    padding-top: 3px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-container {
+    width: 100%;
+    height: 100px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-bottom: 10px;
+  }
+
+  .header-box {
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .box-img {
+    width: 300px;
+    padding-top: -5px;
+  }
+
+  .box-img img {
+    width: 100%;
+  }
+
+  .header-box p {
+    color: white;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-container {
+    width: 100%;
+    height: 100px;
+    background-color: #121212;
+  }
+
+  .header-box {
+    width: 1400px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .box-img {
+    width: 500px;
+  }
+
+  .box-img img {
+    width: 100%;
+  }
+
+  .about-works {
+    margin-top: 15px;
+  }
+
+  .about-works p {
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+@media only screen and (min-width: 280px) {
+  .footer-container {
+    width: 100%;
+    height: 40px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .footer-socials {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-socials img {
+    width: 30px;
+  }
+}
